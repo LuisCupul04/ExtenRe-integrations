@@ -1,10 +1,23 @@
-# 🔩 ReVanced Integrations  
+<p align="center">
+  <picture>
+    <source
+      width="350px"
+      media="(prefers-color-scheme: dark)"
+      srcset="Logo/ExtenRe-Red.svg">
+    <img src="Logo/ExtenRe-Red-Light.svg" alt="ExtenRe Patcher Logo" width="350px">
+  </picture>
+</p>
 
-ReVanced Extended Integrations containing classes to be merged by ReVanced Patcher.
+# 🔧 ExtenRe Integrations  
 
-## ❓ How to use debugging:
+**ExtenRe Integrations** contains classes and modules that integrate with the **ExtenRe** project to extend its functionality. This repository allows the integration of new features and optimizations that can be used alongside the **ExtenRe Patcher**.
 
-- Usage on Windows: ```adb logcat | findstr "Extended" > log.txt```
-- Usage on Linux: ```adb logcat | grep --line-buffered "Extended" > log.txt```
-  
-This will write the log to a file called log.txt which you can view then.
+## ❓ How to Use Debugging
+
+If you need to debug any integrations or patching processes, you can capture the log output using the following commands:
+
+### Windows:
+Use `adb logcat` to capture logs, filtering for the keyword "ExtenRe". This will write the logs to a file called `log.txt`.
+
+```bash
+adb logcat | findstr "ExtenRe" > log.txt
